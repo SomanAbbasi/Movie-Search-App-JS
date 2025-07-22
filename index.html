@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Search Box</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="app-container">
+    <h1><i class="fa-solid fa-film"></i> Movie Search </h1>
+    <div class="search-bar">
+      <input type="text" id="searchInput" class="input" placeholder="Search for movie...">
+      <button id="search-btn" onclick="handleSearch()"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
+    </div>
+
+    <div class="loading">
+      <div class="loading-spinner">
+        <p>Searching movies...</p>
+      </div>
+    </div>
+
+
+
+    <div id="results" class="movie-list">
+      <div class="empty-state">
+        <i class="fas fa-search"></i>
+        <h3>Search for movies</h3>
+        <p>Enter a movie title to begin your search</p>
+      </div>
+    </div>
+
+    <div id="movieDetails" class="movieDetails">
+      <div class="details-container">
+        <button class="close-btn" onclick="closeModal()">&times;</button>
+        <div class="details-content">
+          <div class="details-poster">
+            <img id="detail-poster" src="" alt="Movie Poster">
+          </div>
+
+          <div class="details-info">
+            <h2 id="detail-title"></h2>
+            <div class="details-meta">
+              <span id="detail-year"></span>
+              <span id="detail-runtime"></span>
+
+              <span class="details-rating">
+                <i class="fas fa-star"></i>
+                <span id="detail-rating"></span>
+              </span>
+            </div>
+            <p id="detail-genre"></p>
+            <div class="details-plot">
+              <p id="detail-plot"></p>
+            </div>
+
+            <div class="details-extra">
+              <p><strong>Director:</strong> <span id="detail-director"></span></p>
+              <p><strong>Actors:</strong> <span id="detail-actors"></span></p>
+              <p><strong>Awards:</strong> <span id="detail-awards"></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
