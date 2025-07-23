@@ -2,6 +2,9 @@
 
 A clean and user-friendly Movie Search App built using **HTML**, **CSS**, and **JavaScript**, powered by the [OMDb API](http://www.omdbapi.com/). Instantly search movies like _Mission Impossible_ or _John Wick_ and view full details with poster, year, type, and more.
 
+## Live Preview
+Follow this link: https://whattowatchhub.netlify.app/
+
 ## 🔍 Features
 
 - 🎥 **Live Movie Search** using OMDb API
